@@ -1,0 +1,111 @@
+{
+  "class_names": [
+    "Organik",
+    "Anorganik",
+    "B3"
+  ],
+  "source_dataset": "D:\\smart_waste_app - Salin\\new dataset\\archive (1)\\Dataset_ThirdStage\\Dataset",
+  "training_images": 18112,
+  "validation_images": 4526,
+  "training_counts": {
+    "Organik": 3210,
+    "Anorganik": 10548,
+    "B3": 4354
+  },
+  "validation_counts": {
+    "Organik": 802,
+    "Anorganik": 2637,
+    "B3": 1087
+  },
+  "extra_training_counts": {
+    "Organik": 0,
+    "Anorganik": 0,
+    "B3": 7
+  },
+  "excluded_folder_counts": {
+    "B_Animal Dead Body": 220,
+    "T_Clothes": 5324,
+    "U_Shoes": 1977,
+    "V_Gloves": 353,
+    "W_Masks": 400,
+    "X_Bandai": 405,
+    "Z_A_Diaper": 778,
+    "Z_B_Electrical Cables": 553,
+    "Z_C_Electronic Chips": 492,
+    "Z_D_Laptops": 398,
+    "Z_E_Small Appliances": 740,
+    "Z_F_Smartphones": 219,
+    "Z_I_Cigarette Butt": 97,
+    "Z_K_Spray cans": 400
+  },
+  "mapping": {
+    "A_Foods": "Organik",
+    "C_Cardboard": "Anorganik",
+    "D_Newspaper": "Anorganik",
+    "E_Paper Cups": "Anorganik",
+    "F_Papers": "Anorganik",
+    "G_Brown Glass": "Anorganik",
+    "H_Porcelin": "Anorganik",
+    "I_Green Glass": "Anorganik",
+    "J_White Glass": "Anorganik",
+    "K_Beverage Cans": "Anorganik",
+    "L_Construction Scrap": "Anorganik",
+    "M_Metal Containers": "Anorganik",
+    "N_Plastic Bag": "Anorganik",
+    "O_Plastic Bottle": "Anorganik",
+    "Q_Plastic Containers": "Anorganik",
+    "R_Plastic Cups": "Anorganik",
+    "S_Tetra Pak": "Anorganik",
+    "Y_Medicine and Medicine Strip": "B3",
+    "Z_A_A_Syringe": "B3",
+    "Z_G_Battery": "B3",
+    "Z_H_Thermometer": "B3",
+    "Z_J_Pesticidebottle": "B3"
+  },
+  "candidate": {
+    "accuracy": 0.93194874060981,
+    "per_class": {
+      "Organik": {
+        "correct": 756,
+        "total": 802,
+        "precision": 0.9509433962264151,
+        "recall": 0.942643391521197
+      },
+      "Anorganik": {
+        "correct": 2494,
+        "total": 2637,
+        "precision": 0.9454131918119788,
+        "recall": 0.9457717102768297
+      },
+      "B3": {
+        "correct": 968,
+        "total": 1087,
+        "precision": 0.8856358645928637,
+        "recall": 0.890524379024839
+      }
+    },
+    "confusion_matrix": [
+      [
+        756,
+        34,
+        12
+      ],
+      [
+        30,
+        2494,
+        113
+      ],
+      [
+        9,
+        110,
+        968
+      ]
+    ]
+  },
+  "limitations": [
+    "Validasi menggunakan pemisahan grup nama file dan belum menggantikan uji foto lapangan.",
+    "Label B3 hanya mengikuti folder dataset; produk berbeda dapat memiliki bahaya berbeda.",
+    "Hasil AI tidak boleh menjadi satu-satunya dasar penanganan limbah berbahaya.",
+    "Model kandidat tidak menggantikan model aplikasi secara otomatis."
+  ]
+}

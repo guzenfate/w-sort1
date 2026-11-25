@@ -1,0 +1,6 @@
+streamlit==1.60.0
+tensorflow==2.15.0
+numpy==1.26.4
+pillow
+pandas
+streamlit-webrtc==0.79.0

@@ -1,0 +1,1 @@
+Taruh keras_model.h5 dan labels.txt dari Teachable Machine di folder ini.

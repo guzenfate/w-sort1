@@ -1,0 +1,33 @@
+# Local Python environments and generated files
+venv/
+__pycache__/
+*.py[cod]
+
+# Local data must never be published with the app
+*.db*
+*.sqlite*
+user_data/
+dataset/
+uji_foto/
+new dataset/
+
+# Streamlit credentials and local application secrets
+.streamlit/secrets.toml
+.env
+.env.*
+!.env.example
+
+# Local model experiments and backups
+model/keras_model_candidate.h5
+model/keras_model_candidate.json
+model/material_model_candidate.h5
+model/material_model_candidate.json
+model/keras_model_before_dataset_training.h5
+model/keras_model_3class_candidate.h5
+model/keras_model_3class_candidate.json
+model/labels_3class_candidate.txt
+
+# Android build output and local build cache
+android_app/.buildozer/
+android_app/bin/
+W-sort/
